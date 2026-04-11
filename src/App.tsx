@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Monitor, Users, Activity, ShieldAlert, Terminal } from 'lucide-react';
+import { Monitor, Users, Activity, ShieldAlert, Terminal, Globe, Network } from 'lucide-react';
 import { CourseLayout } from '@/components/course/CourseLayout';
 import Chapter1 from '@/pages/Chapter1';
 import Chapter2 from '@/pages/Chapter2';
@@ -21,6 +21,15 @@ import Chapter17 from '@/pages/Chapter17';
 import Chapter18 from '@/pages/Chapter18';
 import Chapter19 from '@/pages/Chapter19';
 import Chapter20 from '@/pages/Chapter20';
+import NetChapter1 from '@/pages/NetChapter1';
+import NetChapter2 from '@/pages/NetChapter2';
+import NetChapter3 from '@/pages/NetChapter3';
+import NetChapter4 from '@/pages/NetChapter4';
+import NetChapter5 from '@/pages/NetChapter5';
+import NetChapter6 from '@/pages/NetChapter6';
+import NetChapter7 from '@/pages/NetChapter7';
+import NetChapter8 from '@/pages/NetChapter8';
+import NetChapter9 from '@/pages/NetChapter9';
 
 export default function App() {
   const [currentChapterId, setCurrentChapterId] = useState<string>('chap1');
@@ -78,6 +87,38 @@ export default function App() {
           chapters: [
             { id: 'chap19', label: '19. Command Prompt Basics', component: <Chapter19 />, outline: [{ id: 'intro', label: 'Interrogation Without Changing' }, { id: 'lab', label: 'Lab: The Interrogation' }, { id: 'quiz', label: 'Knowledge Check' }] },
             { id: 'chap20', label: '20. CLI Navigation', component: <Chapter20 />, outline: [{ id: 'intro', label: 'Location, Location, Location' }, { id: 'lab', label: 'Lab: Bridging the Worlds' }, { id: 'quiz', label: 'Knowledge Check' }] }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Track 2: Network Fundamentals",
+      modules: [
+        {
+          title: "Module 1: The Network Map",
+          icon: Globe,
+          chapters: [
+            { id: 'net-chap1', label: '1. What is a Network?', component: <NetChapter1 />, outline: [{ id: 'intro', label: 'LAN vs WAN' }, { id: 'lab', label: 'Lab: Tracing Routes' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap2', label: '2. MAC Addresses & Layers', component: <NetChapter2 />, outline: [{ id: 'intro', label: 'The Physical Address' }, { id: 'lab', label: 'Lab: Hardware ID' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap3', label: '3. IPv4 & The Router', component: <NetChapter3 />, outline: [{ id: 'intro', label: 'IP & Gateways' }, { id: 'lab', label: 'Lab: Finding the Exit' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap4', label: '4. DHCP & IP Leases', component: <NetChapter4 />, outline: [{ id: 'intro', label: 'The IP Lease' }, { id: 'lab', label: 'Lab: Checking Timelines' }, { id: 'quiz', label: 'Knowledge Check' }] }
+          ]
+        },
+        {
+          title: "Module 2: How Computers Talk",
+          icon: Network,
+          chapters: [
+            { id: 'net-chap5', label: '5. DNS (Phonebook)', component: <NetChapter5 />, outline: [{ id: 'intro', label: 'The Translation' }, { id: 'lab', label: 'Lab: Querying' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap6', label: '6. TCP vs. UDP', component: <NetChapter6 />, outline: [{ id: 'intro', label: 'Reliability vs Speed' }, { id: 'lab', label: 'Lab: Observing Traffic' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap7', label: '7. The 3-Way Handshake', component: <NetChapter7 />, outline: [{ id: 'intro', label: 'SYN, SYN-ACK, ACK' }, { id: 'lab', label: 'Lab: Connection States' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap8', label: '8. Ports & Services', component: <NetChapter8 />, outline: [{ id: 'intro', label: 'The 65,535 Doors' }, { id: 'lab', label: 'Lab: Port Visibility' }, { id: 'quiz', label: 'Knowledge Check' }] }
+          ]
+        },
+        {
+          title: "Module 3: Network Security",
+          icon: ShieldAlert,
+          chapters: [
+            { id: 'net-chap9', label: '9. NAT & Private IPs', component: <NetChapter9 />, outline: [{ id: 'intro', label: 'Network Translation' }, { id: 'lab', label: 'Lab: The NAT Illusion' }, { id: 'quiz', label: 'Knowledge Check' }] }
           ]
         }
       ]
