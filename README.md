@@ -32,7 +32,7 @@ To run this platform locally on your machine:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/yourusername/mlatech-bootcamp.git](https://github.com/yourusername/mlatech-bootcamp.git)
+git clone https://github.com/yourusername/mlatech-bootcamp.git
 cd mlatech-bootcamp
 ```
 
