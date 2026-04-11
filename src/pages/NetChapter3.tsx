@@ -62,7 +62,7 @@ export default function NetChapter3() {
                                     2. Type the following command and press Enter:
                                     <div className="relative rounded-lg border border-border bg-black/40 p-3 mt-2 mb-2 w-fit">
                                         <pre className="text-primary font-mono text-sm">ipconfig</pre>
-                                        <button onClick={() => copyCode('ipconfig')} className="absolute right-2 top-2 rounded bg-secondary px-2 py-1 text-[10px] font-bold text-muted-foreground hover:text-foreground border border-border z-10">COPY</button>
+
                                     </div>
                                 </li>
                                 <li>3. Locate your active adapter (e.g., Wireless LAN adapter Wi-Fi).</li>

@@ -62,7 +62,7 @@ export default function NetChapter1() {
                                     2. Type the following command and press Enter:
                                     <div className="relative rounded-lg border border-border bg-black/40 p-3 mt-2 mb-2 w-fit">
                                         <pre className="text-primary font-mono text-sm">tracert 8.8.8.8</pre>
-                                        <button onClick={() => copyCode('tracert 8.8.8.8')} className="absolute right-2 top-2 rounded bg-secondary px-2 py-1 text-[10px] font-bold text-muted-foreground hover:text-foreground border border-border z-10">COPY</button>
+
                                     </div>
                                 </li>
                                 <li>3. Watch as the tool maps every single "hop". The first hop is usually your home router. Every hop after that is your ISP routing your data across the country!</li>
