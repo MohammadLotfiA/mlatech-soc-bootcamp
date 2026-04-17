@@ -83,6 +83,8 @@ export function CourseLayout({
                     </h1>
                     <div className="text-xs text-muted-foreground mt-1 uppercase tracking-widest font-semibold">SOC Level 1 Bootcamp</div>
                     <div className="text-xs mt-1 tracking-widest font-semibold">Brought to you by <span className='italic'>ImpactTek</span></div>
+                    <br />
+                    <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fmohammadlotfia.github.io%2Fmlatech-soc-bootcamp%2F"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fmohammadlotfia.github.io%2Fmlatech-soc-bootcamp%2F&labelColor=%23dce775&countColor=%23263759" /></a>
                 </div>
                 {/* SCROLL FIX IS HERE: flex-1 and overflow-y-auto */}
                 <div className="flex-1 overflow-y-auto">
