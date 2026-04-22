@@ -30,6 +30,9 @@ import NetChapter6 from '@/pages/NetChapter6';
 import NetChapter7 from '@/pages/NetChapter7';
 import NetChapter8 from '@/pages/NetChapter8';
 import NetChapter9 from '@/pages/NetChapter9';
+import NetChapter10 from '@/pages/NetChapter10';
+import NetChapter11 from '@/pages/NetChapter11';
+import NetChapter12 from '@/pages/NetChapter12';
 
 export default function App() {
   const [currentChapterId, setCurrentChapterId] = useState<string>('chap1');
@@ -118,7 +121,10 @@ export default function App() {
           title: "Module 3: Network Security",
           icon: ShieldAlert,
           chapters: [
-            { id: 'net-chap9', label: '9. NAT & Private IPs', component: <NetChapter9 />, outline: [{ id: 'intro', label: 'Network Translation' }, { id: 'lab', label: 'Lab: The NAT Illusion' }, { id: 'quiz', label: 'Knowledge Check' }] }
+            { id: 'net-chap9', label: '9. NAT & Private IPs', component: <NetChapter9 />, outline: [{ id: 'intro', label: 'Network Translation' }, { id: 'lab', label: 'Lab: The NAT Illusion' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap10', label: '10. HTTP vs HTTPS', component: <NetChapter10 />, outline: [{ id: 'intro', label: 'Encryption' }, { id: 'lab', label: 'Lab: Inspecting Certificates' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap11', label: '11. Firewalls', component: <NetChapter11 />, outline: [{ id: 'intro', label: 'Access Control' }, { id: 'lab', label: 'Lab: Building a Wall' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap12', label: '12. VPNs & Proxies', component: <NetChapter12 />, outline: [{ id: 'intro', label: 'The Middlemen' }, { id: 'lab', label: 'Lab: Proxy Auditing' }, { id: 'quiz', label: 'Knowledge Check' }] }
           ]
         }
       ]
