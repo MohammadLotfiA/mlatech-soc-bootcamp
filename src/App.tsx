@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Monitor, Users, Activity, ShieldAlert, Terminal, Globe, Network } from 'lucide-react';
+import { Monitor, Users, Activity, ShieldAlert, Terminal, Globe, Network, ShieldHalf } from 'lucide-react';
 import { CourseLayout } from '@/components/course/CourseLayout';
 import Chapter1 from '@/pages/Chapter1';
 import Chapter2 from '@/pages/Chapter2';
@@ -33,6 +33,12 @@ import NetChapter9 from '@/pages/NetChapter9';
 import NetChapter10 from '@/pages/NetChapter10';
 import NetChapter11 from '@/pages/NetChapter11';
 import NetChapter12 from '@/pages/NetChapter12';
+import NetChapter13 from '@/pages/NetChapter13';
+import NetChapter14 from '@/pages/NetChapter14';
+import NetChapter15 from '@/pages/NetChapter15';
+import NetChapter16 from '@/pages/NetChapter16';
+import SecChapter1 from '@/pages/SecChapter1';
+import SecChapter2 from '@/pages/SecChapter2';
 
 export default function App() {
   const [currentChapterId, setCurrentChapterId] = useState<string>('chap1');
@@ -126,9 +132,32 @@ export default function App() {
             { id: 'net-chap11', label: '11. Firewalls', component: <NetChapter11 />, outline: [{ id: 'intro', label: 'Access Control' }, { id: 'lab', label: 'Lab: Building a Wall' }, { id: 'quiz', label: 'Knowledge Check' }] },
             { id: 'net-chap12', label: '12. VPNs & Proxies', component: <NetChapter12 />, outline: [{ id: 'intro', label: 'The Middlemen' }, { id: 'lab', label: 'Lab: Proxy Auditing' }, { id: 'quiz', label: 'Knowledge Check' }] }
           ]
+        },
+        {
+          title: "Module 4: Wire Interrogation",
+          icon: Terminal,
+          chapters: [
+            { id: 'net-chap13', label: '13. netstat & PIDs', component: <NetChapter13 />, outline: [{ id: 'intro', label: 'The -ANO Flags' }, { id: 'lab', label: 'Lab: Bridge Investigation' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap14', label: '14. PCAP Basics', component: <NetChapter14 />, outline: [{ id: 'intro', label: 'Anatomy of a Packet' }, { id: 'lab', label: 'Lab: Deep Inspection' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap15', label: '15. Reading Wireshark', component: <NetChapter15 />, outline: [{ id: 'intro', label: 'The Three Panes' }, { id: 'lab', label: 'Lab: Mastering Filters' }, { id: 'quiz', label: 'Knowledge Check' }] },
+            { id: 'net-chap16', label: '16. SOC Capstone', component: <NetChapter16 />, outline: [{ id: 'intro', label: 'The Golden Timeline' }, { id: 'lab', label: 'Lab: Tracing the Beacon' }, { id: 'quiz', label: 'Knowledge Check' }] }
+          ]
         }
       ]
-    }
+    },
+    {
+      title: "Track 3: CompTIA Security+",
+      modules: [
+        {
+          title: "Module 1: Security Fundamentals",
+          icon: ShieldHalf,
+          chapters: [
+            { id: 'sec-chap1', label: '1. Core Security Concepts', component: <SecChapter1 />, outline: [{ id: 'intro', label: 'The CIA Triad' }, { id: 'controls', label: 'Security Controls' }, { id: 'lab', label: 'Lab: Hashing' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap2', label: '2. Threat Actors & Vectors', component: <SecChapter2 />, outline: [{ id: 'intro', label: 'Vulnerability & Threats' }, { id: 'social-eng', label: 'Social Engineering' }, { id: 'lab', label: 'Lab: Domain Analysis' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+          ]
+        }
+      ]
+    },
   ];
 
   // --- AUTOMATION ENGINE (Updated for 3 levels) ---
