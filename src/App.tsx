@@ -39,6 +39,8 @@ import NetChapter15 from '@/pages/NetChapter15';
 import NetChapter16 from '@/pages/NetChapter16';
 import SecChapter1 from '@/pages/SecChapter1';
 import SecChapter2 from '@/pages/SecChapter2';
+import SecChapter3 from '@/pages/SecChapter3';
+import SecChapter4 from '@/pages/SecChapter4';
 
 export default function App() {
   const [currentChapterId, setCurrentChapterId] = useState<string>('chap1');
@@ -154,6 +156,8 @@ export default function App() {
           chapters: [
             { id: 'sec-chap1', label: '1. Core Security Concepts', component: <SecChapter1 />, outline: [{ id: 'intro', label: 'The CIA Triad' }, { id: 'controls', label: 'Security Controls' }, { id: 'lab', label: 'Lab: Hashing' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
             { id: 'sec-chap2', label: '2. Threat Actors & Vectors', component: <SecChapter2 />, outline: [{ id: 'intro', label: 'Vulnerability & Threats' }, { id: 'social-eng', label: 'Social Engineering' }, { id: 'lab', label: 'Lab: Domain Analysis' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap3', label: '3. Cryptography & PKI', component: <SecChapter3 />, outline: [{ id: 'intro', label: 'Cryptographic Algorithms' }, { id: 'pki', label: 'Public Key Infrastructure' }, { id: 'solutions', label: 'Cryptographic Solutions' }, { id: 'lab', label: 'Lab: PKI Auditing' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap4', label: '4. Identity & Access Mgmt', component: <SecChapter4 />, outline: [{ id: 'intro', label: 'Authentication Factors' }, { id: 'identity', label: 'Identity & Federation' }, { id: 'lab', label: 'Lab: Account Auditing' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
           ]
         }
       ]
