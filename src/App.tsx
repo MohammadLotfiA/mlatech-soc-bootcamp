@@ -41,6 +41,10 @@ import SecChapter1 from '@/pages/SecChapter1';
 import SecChapter2 from '@/pages/SecChapter2';
 import SecChapter3 from '@/pages/SecChapter3';
 import SecChapter4 from '@/pages/SecChapter4';
+import SecChapter5 from '@/pages/SecChapter5';
+import SecChapter6 from '@/pages/SecChapter6';
+import SecChapter7 from '@/pages/SecChapter7';
+import SecChapter8 from '@/pages/SecChapter8';
 
 export default function App() {
   const [currentChapterId, setCurrentChapterId] = useState<string>('chap1');
@@ -158,6 +162,10 @@ export default function App() {
             { id: 'sec-chap2', label: '2. Threat Actors & Vectors', component: <SecChapter2 />, outline: [{ id: 'intro', label: 'Vulnerability & Threats' }, { id: 'social-eng', label: 'Social Engineering' }, { id: 'lab', label: 'Lab: Domain Analysis' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
             { id: 'sec-chap3', label: '3. Cryptography & PKI', component: <SecChapter3 />, outline: [{ id: 'intro', label: 'Cryptographic Algorithms' }, { id: 'pki', label: 'Public Key Infrastructure' }, { id: 'solutions', label: 'Cryptographic Solutions' }, { id: 'lab', label: 'Lab: PKI Auditing' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
             { id: 'sec-chap4', label: '4. Identity & Access Mgmt', component: <SecChapter4 />, outline: [{ id: 'intro', label: 'Authentication Factors' }, { id: 'identity', label: 'Identity & Federation' }, { id: 'lab', label: 'Lab: Account Auditing' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap5', label: '5. Enterprise Architecture', component: <SecChapter5 />, outline: [{ id: 'intro', label: 'Network Architecture' }, { id: 'appliances', label: 'Security Appliances' }, { id: 'vpn', label: 'VPNs & Tunnels' }, { id: 'lab', label: 'Lab: SSH Jump Servers' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap6', label: '6. Cloud & Zero Trust', component: <SecChapter6 />, outline: [{ id: 'intro', label: 'Cloud Architecture' }, { id: 'shared', label: 'Shared Responsibility' }, { id: 'iot', label: 'Embedded & IoT' }, { id: 'zero-trust', label: 'Zero Trust Lab' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap7', label: '7. Resiliency & Site Security', component: <SecChapter7 />, outline: [{ id: 'intro', label: 'Asset Management' }, { id: 'redundancy', label: 'Resiliency Strategies' }, { id: 'physical', label: 'Physical Security' }, { id: 'lab', label: 'Lab: Capacity Planning' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap8', label: '8. Vulnerability Management', component: <SecChapter8 />, outline: [{ id: 'intro', label: 'Device Vulnerabilities' }, { id: 'app', label: 'App Vulnerabilities' }, { id: 'scan', label: 'Identification & Analysis' }, { id: 'lab', label: 'Lab: CVSS Scoring' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] }
           ]
         }
       ]
