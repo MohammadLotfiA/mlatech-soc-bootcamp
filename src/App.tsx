@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Monitor, Users, Activity, ShieldAlert, Terminal, Globe, Network, ShieldHalf } from 'lucide-react';
+import { Monitor, Users, Activity, ShieldAlert, Terminal, Globe, Network, ShieldHalf, Scale } from 'lucide-react';
 import { CourseLayout } from '@/components/course/CourseLayout';
 import Chapter1 from '@/pages/Chapter1';
 import Chapter2 from '@/pages/Chapter2';
@@ -45,6 +45,14 @@ import SecChapter5 from '@/pages/SecChapter5';
 import SecChapter6 from '@/pages/SecChapter6';
 import SecChapter7 from '@/pages/SecChapter7';
 import SecChapter8 from '@/pages/SecChapter8';
+import SecChapter9 from '@/pages/SecChapter9';
+import SecChapter10 from '@/pages/SecChapter10';
+import SecChapter11 from '@/pages/SecChapter11';
+import SecChapter12 from '@/pages/SecChapter12';
+import SecChapter13 from '@/pages/SecChapter13';
+import SecChapter14 from '@/pages/SecChapter14';
+import SecChapter15 from '@/pages/SecChapter15';
+import SecChapter16 from '@/pages/SecChapter16';
 
 export default function App() {
   const [currentChapterId, setCurrentChapterId] = useState<string>('chap1');
@@ -167,9 +175,29 @@ export default function App() {
             { id: 'sec-chap7', label: '7. Resiliency & Site Security', component: <SecChapter7 />, outline: [{ id: 'intro', label: 'Asset Management' }, { id: 'redundancy', label: 'Resiliency Strategies' }, { id: 'physical', label: 'Physical Security' }, { id: 'lab', label: 'Lab: Capacity Planning' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
             { id: 'sec-chap8', label: '8. Vulnerability Management', component: <SecChapter8 />, outline: [{ id: 'intro', label: 'Device Vulnerabilities' }, { id: 'app', label: 'App Vulnerabilities' }, { id: 'scan', label: 'Identification & Analysis' }, { id: 'lab', label: 'Lab: CVSS Scoring' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] }
           ]
+        },
+        {
+          title: "Module 2: Security Operations & Architecture",
+          icon: ShieldAlert,
+          chapters: [
+            { id: 'sec-chap9', label: '9. Evaluate Network Security', component: <SecChapter9 />, outline: [{ id: 'intro', label: 'Baselines & Hardening' }, { id: 'wireless', label: 'Wireless Security' }, { id: 'acl', label: 'ACLs & Screened Subnets' }, { id: 'ids', label: 'IDS/IPS Detection' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap10', label: '10. Endpoint Security', component: <SecChapter10 />, outline: [{ id: 'intro', label: 'Endpoint Hardening' }, { id: 'edr', label: 'EDR & Protection' }, { id: 'mobile', label: 'Mobile Device Mgmt' }, { id: 'lab', label: 'Lab: AppLocker Policy' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap11', label: '11. Application Security', component: <SecChapter11 />, outline: [{ id: 'intro', label: 'Secure Protocols' }, { id: 'email', label: 'Email Security' }, { id: 'coding', label: 'Secure Coding' }, { id: 'lab', label: 'Lab: DNS Lookups' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap12', label: '12. Alerting & Monitoring', component: <SecChapter12 />, outline: [{ id: 'intro', label: 'Incident Response' }, { id: 'forensics', label: 'Digital Forensics' }, { id: 'siem', label: 'SIEM & Alerting' }, { id: 'lab', label: 'Lab: Log Analysis' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap13', label: '13. Malicious Indicators', component: <SecChapter13 />, outline: [{ id: 'intro', label: 'Malware Vectors' }, { id: 'network', label: 'Network Attacks' }, { id: 'app', label: 'Application Attacks' }, { id: 'lab', label: 'Lab: URL Analysis' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] }
+          ]
+        },
+        {
+          title: "Module 3: Governance, Risk, & Compliance",
+          icon: Scale,
+          chapters: [
+            { id: 'sec-chap14', label: '14. Security Governance', component: <SecChapter14 />, outline: [{ id: 'intro', label: 'Policies & Standards' }, { id: 'legal', label: 'Regulations & Law' }, { id: 'change', label: 'Change Management' }, { id: 'auto', label: 'Automation' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap15', label: '15. Risk Management', component: <SecChapter15 />, outline: [{ id: 'intro', label: 'Risk Concepts' }, { id: 'bia', label: 'BIA & Metrics' }, { id: 'vendor', label: 'Vendor Agreements' }, { id: 'audit', label: 'Audits & Assessments' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] },
+            { id: 'sec-chap16', label: '16. Data Protection', component: <SecChapter16 />, outline: [{ id: 'intro', label: 'Data Classification' }, { id: 'privacy', label: 'Privacy & Sovereignty' }, { id: 'states', label: 'Data States' }, { id: 'lab', label: 'Lab: DLP Policies' }, { id: 'quiz', label: 'Security+ PBQ & Quiz' }] }
+          ]
         }
       ]
-    },
+    }
   ];
 
   // --- AUTOMATION ENGINE (Updated for 3 levels) ---
